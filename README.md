@@ -44,4 +44,4 @@ Start by compiling the Go file into a binary `go build -o deej.out main.go`.
 
 Go to Settings, and in the search bar, search **"Login Items"**. <ins>Press the plus icon at the bottom left corner of the box, navigate to the deej-mac folder, and select **deej.out.**</ins> Then, press the plus icon, navigate to Applications, and click Background Music.
 
-Reboot your system and try it out.
+Reboot your system and try it out!
