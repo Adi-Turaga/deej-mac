@@ -14,19 +14,17 @@ After clicking the link above, install the .pkg file that matches your Mac chip 
 
 The binding between controlling the volume of your Mac and the Deej program is BackgroundMusic, so it's crucial that you install this app. To install, click the link and scroll down to the **Download** section to find the .pkg file. Follow instructions on screen to install the app.
 
-# Some More Setup (We're Almost Done)
+# Setup
 
 After installing everything, clone this repository `git clone https://github.com/Adi-Turaga/deej-mac.git`
 
-Plug the Deej into a USB port. To find the USB port, type in the following command:
+Plug the Deej into a USB port. To find the USB port, type in `ls /dev/tty.*` *(don't forget the . after tty)*
 
-`ls /dev/tty.*` *(don't forget the . after tty)*
-
-One option should show up should look like `/dev/tty.usbserial-****`. This is the port that the Deej is using.
+One option should show up should look like `/dev/tty.usbserial-****`. __This is the port that the Deej is using.__
 
 In the **main.go** file, go to **line 73**. ***Replace the placeholder serial port with your result.***
 
-After all the setting up, go to Apps and click on Background Music to start it up. It's icon will show up on your system tray. Click on the icon to pick and choose apps that you want to control.
+<ins>Go to Apps and click on Background Music</ins> to start it up. It's icon will show up on your system tray. Click on the icon to pick and choose apps that you want to control.
 
 ***To control the apps of your choice***, go to **line 79** in the code. To find out the bundleID (the name of the app that Mac uses) of an app, run `osascript -e 'id of app "{insert app}"'`.
 
