@@ -38,7 +38,7 @@ Insert the bundleID of said app into the array starting at line 79. **For testin
 
 After everything is setup (make sure again), type `go run main.go`. This should start up the script, but read errors on terminal if they show up, usually they're pretty self-explanatory.
 
-# Running on start
+# Running on Start
 
 Start by compiling the Go file into a binary `go build -o deej.out main.go`. 
 
